@@ -23,6 +23,30 @@ function Popular() {
   );
 }
 
-const PopularStyled = styled.div``;
+const PopularStyled = styled.div`
+  display: flex;
+  .popular-anime {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    border-top: 5px solid #e5e7eb;
+    a {
+      height: 500px;
+      border-radius: 7px;
+      border: 5px solid #e5e7eb;
+    }
+    a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+`;
 
 export default Popular;
