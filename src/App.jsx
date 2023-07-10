@@ -1,5 +1,5 @@
 import AnimeItem from "./Components/AnimeItem";
-import Gallery from "./Components/Gallery.JSX";
+import Gallery from "./Components/Gallery";
 import Homepage from "./Components/Homepage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
