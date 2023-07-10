@@ -2,6 +2,8 @@ import { useState } from "react";
 import Popular from "./Popular";
 import { useGlobalContext } from "../context/global";
 import styled from "styled-components";
+import Upcoming from "./Upcoming";
+import Airing from "./Airing";
 
 function Homepage() {
   const {
@@ -19,6 +21,10 @@ function Homepage() {
     switch (rendered) {
       case "popular":
         return <Popular rendered={rendered} />;
+      case "airing":
+        return <Airing rendered={rendered} />;
+      case "upcoming":
+        return <Upcoming rendered={rendered} />;
       default:
         return <Popular rendered={rendered} />;
     }
